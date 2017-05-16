@@ -2,3 +2,5 @@ node_modules/
 lib/
 samples/bundle.js
 *.log
+yarn.lock
+.DS_Store

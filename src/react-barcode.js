@@ -1,4 +1,4 @@
-'use strict';
+
 
 var React = require('react');
 var JsBarcode = require('jsbarcode');
@@ -22,6 +22,7 @@ var Barcode = React.createClass({
     width: React.PropTypes.number,
     height: React.PropTypes.number,
     displayValue: React.PropTypes.bool,
+    text: React.PropTypes.string,
     fontOptions: React.PropTypes.string,
     font: React.PropTypes.string,
     textAlign: React.PropTypes.string,
@@ -35,6 +36,7 @@ var Barcode = React.createClass({
     marginBottom: React.PropTypes.number,
     marginLeft: React.PropTypes.number,
     marginRight: React.PropTypes.number,
+    valid: React.PropTypes.func,
   },
 
   getDefaultProps: function() {
